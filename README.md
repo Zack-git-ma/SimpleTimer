@@ -1,2 +1,2 @@
 # SimpleTimer
-Simple Windows console countdown timer。
+Simple Windows console countdown timer.
