@@ -88,3 +88,41 @@ g++ SimpleTimer_Chinese.cpp -o SimpleTimer.exe -static-libgcc -lwinmm
 命令行编译参考：
 ```bash
 g++ SimpleTimer_Chinese.cpp -o SimpleTimer.exe -static-libgcc -lwinmm
+
+
+
+
+
+
+
+## 使用说明 Usage
+
+> 📌 普通用户 | For regular users
+直接下载可执行程序 exe 使用，**不需要安装 Dev‑C++**。
+Download the exe file directly to use. **Dev‑C++ is NOT required.**
+
+> 📌 需要源码的用户 | For source‑code users
+如果需要获取源码、修改或重新编译项目，请安装 **Dev‑C++ 5.11**。
+If you need source code for modification or rebuilding, please install **Dev‑C++ version 5.11**.
+
+### 编译构建 Build Instructions
+#### Dev‑C++ 5.11
+1. 获取全部项目源码文件
+2. 使用 Dev‑C++ 5.11 打开 `SimpleTimer.dev` 项目文件
+3. 项目已内置链接器参数，无需额外配置，直接编译即可
+4. 运行程序时，请将 `alert.wav` 和生成的 `SimpleTimer.exe` 放在同一个文件夹，否则没有提示音
+
+1. Get all project source files
+2. Open `SimpleTimer.dev` project file with Dev‑C++ 5.11
+3. Linker parameters are built‑in, no extra configuration needed, just build
+4. Place `alert.wav` in the same folder as `SimpleTimer.exe` when running, or there will be no alert sound
+
+#### 其他 C++ 编译器 Other compilers
+使用其他编译器编译，必须手动添加链接器参数：`‑lwinmm`
+If you use other compilers, you must add this linker flag manually: `‑lwinmm`
+
+### 文件说明 File notes
+- `SimpleTimer.dev`：Dev‑C++ 5.11 项目工程文件 | Dev‑C++ 5.11 project file
+- `SimpleTimer.layout`：IDE窗口布局文件，不参与编译，可直接删除 | IDE layout file, safe to delete, won't affect compilation
+- `*.cpp`：程序源代码 | Source code
+- `alert.wav`：提示音资源文件 | Alert sound resource
